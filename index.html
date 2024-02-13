@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Card</title>
+    <style>
+        img{
+            height: auto;
+            max-width: 80%;
+        }
+        div{
+            text-align: center;
+            background-color: #DC143C;
+        }
+        #heart {
+        position: relative;
+        width: 100px;
+        height: 90px;
+        margin-top: 10px;
+        }
+
+        #heart::before, #heart::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 52px;
+        height: 80px;
+        border-radius: 50px 50px 0 0;
+        background: white;
+        }
+
+        #heart::before {
+        left: 50px;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+        }
+
+        #heart::after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+        }
+        #text{
+            color: white;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./assets/images/happy_couple.jpg" alt="happy_couple">
+        <p id="text">
+            Изминаха три години от както се срещнахме и ти изпълни живота ми с щастие и любов. <br>
+            Три години, а сякаш те познавам от десетилетие. Това е защото за толкова малко време, заедно <br>преминахме през толкова много неща, че някак си е трудно да повярва човек, как са успели да се случат за толкова кратко време. <br>Не бих желал да преживея тези моменти, а и всички следващи, с никоя друга, а само с теб. <br>Прекрасна си! Обичам те! Честито три години щастие любима моя!
+        </p>
+    </div>
+    
+</body>
+<footer>
+    <br/>
+    <small>
+        Copyright © 2024 Valentin Dimitrov (VDime). All Rights Reserved. Specialy made for Margarita Atanasova.
+    </small>
+</footer>
+</html>
